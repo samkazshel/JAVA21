@@ -41,23 +41,24 @@ public class Runner {
 //	-float, String
 //	-char, boolean, int
 	
+	//a function that returns a float
 	public static float moneyLeftInAccount(float balance) {
 		System.out.println("Balance left in account: " + balance);
 		return balance;
 	}
-	
+	//a function that returns a boolean and a float
 	public static void wantPurchase(boolean purchase, float amount) {
 		System.out.println("I want to purchase this item: " + purchase + "Amount paying: " + amount);
 	}
-	
+	//a function that returns a float and a string
 	public static void owed(float amount, String person) {
 		System.out.println("The amount I owe is: " + amount + " I owe this to: " + person);
 	}
-	
+	//a function that returns a char, boolean, int
 	public static void blahblah(char b, boolean l, int a) {
 		System.out.println("blah " + b + " blah " + l + "blash " + a);
 	}
-	
+	//a function that passed in two numbers and adds them together
 	public static int adding(int num1, int num2) {
 		int num3 = num1 + num2;
 		return num3;
