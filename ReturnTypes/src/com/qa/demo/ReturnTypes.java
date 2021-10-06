@@ -28,7 +28,7 @@ public class ReturnTypes {
 		return "Hey, this is a String";
 	}
 
-	public static Boolean returnBool() {
+	public static boolean returnBool() {
 		return true;
 	}
 	
@@ -40,13 +40,13 @@ public class ReturnTypes {
 		return 1.5f;
 	}
 	
-	public static Object returnNULL() {
-		return null;
+	public void returnNull() {
+		
 	}
 	
-	public static void string7() {
+	public static String string7() {
 		String s = "7";
-		System.out.println(Integer.parseInt(s));
+		return s;
 	}
 	
 }

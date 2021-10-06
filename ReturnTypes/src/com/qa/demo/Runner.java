@@ -1,5 +1,6 @@
 package com.qa.demo;
 
+
 public class Runner {
 	public static void main (String [] args) {
 		boo();
@@ -9,8 +10,7 @@ public class Runner {
 		System.out.println(ReturnTypes.returnBool());
 		System.out.println(ReturnTypes.returnFloat());
 		System.out.println(ReturnTypes.returnChar());
-		System.out.println(ReturnTypes.returnNULL());
-		ReturnTypes.string7();
+		System.out.println(Integer.parseInt(ReturnTypes.string7()));
 	}
 	
 	//Creating a method that prints hello world
