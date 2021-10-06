@@ -1,0 +1,2 @@
+module IdealProject {
+}
