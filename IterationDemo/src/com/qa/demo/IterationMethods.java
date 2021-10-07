@@ -39,7 +39,8 @@ public class IterationMethods {
 	// - When the total money left goes under a different value (50), the loop stops 
 	// - And prints out "stop spending money!"
 	
-	
+	//This should really be a do or do while loop, as the for loop is not actually making use
+	//of the integer i
 	public static void forLoopDemo(int money, int stop) {
 		
 		int min = 50;

@@ -1,5 +1,7 @@
 package com.qa.runner;
 
+import com.qa.demo.ForLoops;
+import com.qa.demo.ForLoopsExercises;
 import com.qa.demo.IterationMethods;
 
 public class Runner {
@@ -8,8 +10,11 @@ public class Runner {
 		// TODO Auto-generated method stub
 //		IterationMethods.whileDemo();
 //		IterationMethods.doWhileDemo();
-		IterationMethods.forLoopDemo(3000, 100);
+//		IterationMethods.forLoopDemo(3000, 100);
 
+//		ForLoops.loopDemo();
+		
+		ForLoopsExercises.num2();
 	}
 
 }
