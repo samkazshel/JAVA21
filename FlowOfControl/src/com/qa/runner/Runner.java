@@ -1,6 +1,7 @@
 package com.qa.runner;
 
-import com.qa.demo.Stack;
+import com.qa.demo.DiceRoller;
+import com.qa.demo.Scope;
 public class Runner {
 	public static void main(String[] args) {
 		
@@ -12,8 +13,14 @@ public class Runner {
 //		ControlFlow.method1();
 //		ControlFlow.method2();
 		
-		System.out.println(Stack.secondLayer(4));
-		System.out.println(Stack.FirstLayer());
+//		System.out.println(Stack.secondLayer(4));
+//		System.out.println(Stack.FirstLayer());
+		
+//		DiceRoller.log(DiceRoller.roll4d6());
+		
+		Scope.conflictingDemo();
+		
+		
 	}
 	
 	
