@@ -53,5 +53,52 @@ public class Arrays {
 		//By accessing the index of the array, I can modify the data
 		Name[1] = "Bobby";
 		System.out.println(Name[1]);
+		
+		
+			
+		}
+	
+	public static void arrayMatch() {
+		
+		int[] array10 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int[] arrayIn = new int[10];
+		
+		for (int i = 0; i < array10.length; i++) {
+			int square = array10[i] *= array10[i];
+			arrayIn[i] = square;
+			System.out.println(square);
+		}
+		
+		for (int i = 0; i < array10.length; i++) {
+			System.out.println(arrayIn[i]);
+		}
+		
+		for (int i = arrayIn.length-1;i >= 0; i--) {
+			System.out.println(arrayIn[i]);
+		}
+		
 	}
-}
+	
+	public static void enhancedForLoop() {
+		
+		String [] pizzas = {"Pepperoni", "Meat Feast", "Hawaiian", "Calzone", "Veggie"};
+		
+		
+		for(int i = 0; i < pizzas.length;i++) {
+			System.out.println(pizzas[i]);
+		}
+		
+		
+		//Enhanced for loop
+		//Data type and stand in variable : array
+		for(String pizza : pizzas) {
+			System.out.println(pizza);
+			
+		}
+		
+		
+		
+	}
+	
+	
+	}
