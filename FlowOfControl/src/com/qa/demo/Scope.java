@@ -34,7 +34,7 @@ public class Scope {
 		return password;
 	}
 
-	public static void printPassword(){
-		System.out.println(password);
-	}
+//	public static void printPassword(){
+//		System.out.println(password);
+//	}
 }

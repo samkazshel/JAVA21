@@ -5,11 +5,13 @@ import com.qa.calculator.CalcMethods;
 public class Runner {
 	
 	public static void main(String [] args) {
-		System.out.println(CalcMethods.addNums(2, 2));
-		System.out.println(CalcMethods.subNums(2, 2));
-		System.out.println(CalcMethods.multiNums(2, 2));
-		System.out.println(CalcMethods.divideNums(2, 2));
-		System.out.println(CalcMethods.powerNums(4, 3));
+		CalcMethods enter56 = new CalcMethods(5, 6);
+		
+		System.out.println(enter56.addNums());
+		System.out.println(enter56.subNums());
+		System.out.println(enter56.multiNums());
+		System.out.println(enter56.divideNums());
+		System.out.println(enter56.powerNums());
 	}
 
 }
