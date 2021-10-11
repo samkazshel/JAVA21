@@ -23,14 +23,6 @@ public class troll extends MythologicalCreature{
 	}
 
 
-
-	@Override
-	public boolean isMagical() {
-		return this.isMagical = true;
-	}
-	
-
-
 	public String getName() {
 		return name;
 	}

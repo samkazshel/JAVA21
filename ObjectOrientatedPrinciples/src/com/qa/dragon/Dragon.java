@@ -1,6 +1,8 @@
 package com.qa.dragon;
 
-public class Dragon {
+import com.qa.lizard.Lizard;
+//extending abstract classes works the same way as parent classes
+public class Dragon extends Lizard {
 
 	//Encapsulation
 	//The idea that data should be accessible on a principle of less 
@@ -71,6 +73,11 @@ public class Dragon {
 		} else {
 		this.wingSpan = wingSpan;
 		}
+	}
+
+	@Override
+	public void sleep() {
+		System.out.println("Lounges on a pile of gold");
 	}
 	
 	

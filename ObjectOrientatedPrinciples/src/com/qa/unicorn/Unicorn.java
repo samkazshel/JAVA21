@@ -18,6 +18,14 @@ public class Unicorn extends MythologicalCreature{
 		this.wings = wings;
 		this.colour = colour;
 	}
+	
+	//Override the magicPower method
+	//Override annotation is option, but the inclusion is good practice
+	//So that other devs know what is happening
+	@Override
+	public String magicPower() {
+		return "*sparkles* neeeEEeehHHHhhh";
+	}
 
 	public int getHornSize() {
 		return hornSize;

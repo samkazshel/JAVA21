@@ -1,5 +1,6 @@
 package com.qa.runner;
 
+import com.qa.bird.Owl;
 import com.qa.dragon.Dragon;
 import com.qa.myth.MythologicalCreature;
 import com.qa.owlBear.OwlBear;
@@ -20,6 +21,8 @@ public class Runner {
 //		System.out.println(charizard.getWingSpan());
 //		
 //		charizard.setName("charizard");
+//		
+//		charizard.sleep();
 		
 //		troll Reginald = new troll(false, "Reggie", 8, false, "Club", 90.10f);
 //		troll Alfie = new troll(false, "Alfie", 7, true, "Pole Arm", 80f);
@@ -36,14 +39,25 @@ public class Runner {
 		
 		
 		
-//		Unicorn bill = new Unicorn(6, true, "red");
+//		Unicorn bill = new Unicorn(true, 6, true, "red");
 //		
 //		System.out.println(bill.isMagical);
 //		System.out.println(bill.magicPower());
 		
-		OwlBear Jamie = new OwlBear(true, "Jamie", 14, true, 90f);
-		System.out.println(Jamie.toString());
-		Jamie.setSpeed(55f);
-		System.out.println(Jamie.toString());
+//		OwlBear Jamie = new OwlBear(true, "Jamie", 14, true, 90f);
+//		System.out.println(Jamie.toString());
+//		Jamie.setSpeed(55f);
+//		System.out.println(Jamie.toString());
+//		System.out.println(Jamie.magicPower());
+		
+		Owl Rich = new Owl(1, "Rich", true);
+		Rich.emergeFromEgg();
+		Rich.cheep();
+		Rich.noise();
+		System.out.println(Rich.fly());
+		Rich.spreadWings();
+		Rich.takeOff();
+		
+		
 	}
 }

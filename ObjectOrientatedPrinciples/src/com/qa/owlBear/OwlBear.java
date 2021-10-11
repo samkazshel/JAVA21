@@ -16,6 +16,11 @@ public class OwlBear extends MythologicalCreature {
 		this.agressive = agressive;
 		this.speed = speed;
 	}
+	
+	@Override
+	public String magicPower() {
+		return "*swings talons* You are now poisoned";
+	}
 
 	public String getName() {
 		return name;
