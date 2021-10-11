@@ -1,6 +1,8 @@
 package com.qa.troll;
 
-public class troll {
+import com.qa.myth.MythologicalCreature;
+
+public class troll extends MythologicalCreature{
 	
 	private String name;
 	private int height;
@@ -9,14 +11,24 @@ public class troll {
 	private float bounty;
 	
 	
-	public troll(String name, int height, boolean isEvil, String weapon, float bounty) {
-		super();
+	
+	
+	public troll(boolean isMagical, String name, int height, boolean isEvil, String weapon, float bounty) {
+		super(isMagical);
 		this.name = name;
 		this.height = height;
 		this.isEvil = isEvil;
 		this.weapon = weapon;
 		this.bounty = bounty;
 	}
+
+
+
+	@Override
+	public boolean isMagical() {
+		return this.isMagical = true;
+	}
+	
 
 
 	public String getName() {
@@ -84,6 +96,12 @@ public class troll {
 			this.bounty = 0;
 		}
 		this.bounty = bounty;
+	}
+
+	@Override
+	public String toString() {
+		return "troll [name=" + name + ", height=" + height + ", isEvil=" + isEvil + ", weapon=" + weapon + ", bounty="
+				+ bounty + ", isMagical=" + isMagical + "]";
 	}
 	
 	
