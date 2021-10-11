@@ -2,30 +2,92 @@ package qa.com.model;
 
 public class Sim {
 	
-	public String name;
-	public String aspiration;
-	public float simoleons;
-	public boolean isVampire;
-	public int hunger;
+	//public - accessible if you import in the package
+	//private - not accessible
+	
+	//fields should be PRIVATE
+	//getters and setters should be PUBLIC
+	
+	private String name;
+	private String aspiration;
+	private float simoleons;
+	private boolean drinksBlood;
+	private int hunger;
 	
 	//Make a constructor with shift + alt + s / right click -> source -> generate constructore using fields
-	public Sim(String name, String aspiration, float simoleons, boolean isVampire, int hunger) {
+	public Sim(String name, String aspiration, float simoleons, boolean drinksBlood, int hunger) {
 		super();
 		this.name = name;
 		this.aspiration = aspiration;
 		this.simoleons = simoleons;
-		this.isVampire = isVampire;
+		this.drinksBlood = drinksBlood;
 		this.hunger = hunger;
 	}
-
-	//creates a method we can use to print out all aspects of our object
 	
+	//Overload
+	//Creating multiple constructors which take in different fields
+	//This constructor doesn't take in drinksBlood field
+	public Sim(String name, String aspiration, float simoleons, int hunger) {
+		super();
+		this.name = name;
+		this.aspiration = aspiration;
+		this.simoleons = simoleons;
+		this.hunger = hunger;
+	}
+	
+	
+	//Getters and Setters
+	//Separate methods used to GET and SET data
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAspiration() {
+		return aspiration;
+	}
+
+	public void setAspiration(String aspiration) {
+		this.aspiration = aspiration;
+	}
+
+	public float getSimoleons() {
+		return simoleons;
+	}
+
+	public void setSimoleons(float simoleons) {
+		this.simoleons = simoleons;
+	}
+
+	public boolean isDrinksBlood() {
+		return drinksBlood;
+	}
+
+	public void setDrinksBlood(boolean drinksBlood) {
+		this.drinksBlood = drinksBlood;
+	}
+
+	public int getHunger() {
+		return hunger;
+	}
+
+	public void setHunger(int hunger) {
+		this.hunger = hunger;
+	}
+	
+	//creates a method we can use to print out all aspects of our object
+
 	//@something - an annotation, tells java what the purpose of this method is
 	@Override
 	public String toString() {
-		return "Sim [name=" + name + ", aspiration=" + aspiration + ", simoleons=" + simoleons + ", isVampire="
-				+ isVampire + ", hunger=" + hunger + "]";
+		return "Sim [name=" + name + ", aspiration=" + aspiration + ", simoleons=" + simoleons + ", drinksBlood="
+				+ drinksBlood + ", hunger=" + hunger + "]";
 	}
+
+
 	
 	
 	

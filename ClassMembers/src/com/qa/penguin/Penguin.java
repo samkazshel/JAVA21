@@ -25,6 +25,8 @@ public class Penguin {
 		this.height = height;
 	}
 	
+	
+	
 	//created an instance variable 
 	public void noise() {
 		System.out.println("Noot Noot");

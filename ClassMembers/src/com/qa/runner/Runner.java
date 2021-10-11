@@ -19,11 +19,11 @@ public class Runner {
 		
 		
 		//Paulie is an object of class penguin, so it can access the instanced method
-		paulie.noise();
-		patrica.noise();
+//		paulie.noise();
+//		patrica.noise();
 		
 		//Instaced objects can access static methods but not the other way around
-		paulie.staticNoise();
-		Penguin.staticNoise();
+//		paulie.staticNoise();
+//		Penguin.staticNoise();
 	}
 }

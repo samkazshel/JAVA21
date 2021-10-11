@@ -20,17 +20,15 @@ public class Runner {
 //		System.out.println(newCake);
 		
 		Lizard Komodo = new Lizard("Komodo Dragon", 50, false, 2.59f);
-		System.out.println(Komodo.Name);
-		System.out.println(Komodo.lifeExpectancy);
-		System.out.println(Komodo.hibernates);
-		System.out.println(Komodo.length);
+		System.out.println(Komodo.toString());
 		
-		Lizard Chameleon = new Lizard("Chameleon", 3, false, 0.6f);
-		System.out.println(Chameleon.Name);
-		System.out.println(Chameleon.lifeExpectancy);
-		System.out.println(Chameleon.hibernates);
-		System.out.println(Chameleon.length);
+		Lizard Chameleon = new Lizard("Chameleon", 3, 0.6f);
+		System.out.println(Chameleon.toString());
 		
+		Lizard mexicanBeadedLizard = new Lizard("Mexican Beaded Lizard", 50, false, 30f, true);
+		System.out.println(mexicanBeadedLizard.toString());
 		
+		mexicanBeadedLizard.setLifeExpectancy(7);
+		System.out.println(mexicanBeadedLizard.toString());
 	}
 }
