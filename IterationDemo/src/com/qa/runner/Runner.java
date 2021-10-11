@@ -22,7 +22,7 @@ public class Runner {
 
 //		ForLoops.loopDemo();
 		
-//		ForLoopsExercises.num2();
+		ForLoopsExercises.coins(20f, 15.50f);
 	}
 
 }

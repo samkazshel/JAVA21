@@ -79,11 +79,51 @@ public class ForLoopsExercises {
 			change -= 5;
 		}
 		
+		while (change > 2f) {
+			two++;
+			change -= 2;
+		}
+		while (change > 1f) {
+			one++;
+			change -= 1;
+		}
+		
+		while (change > 0.50f) {
+			fiftyPence++;
+			change -= 0.5f;
+		}
+		
+		while (change > 0.20f) {
+			twentyPence++;
+			change -= 0.20f;
+		}
+		
+		while (change > 0.10f) {
+			tenPence++;
+			change -= 0.10f;
+		}
+		
+		while (change > 0.05f) {
+			fivePence++;
+			change -= 0.05f;
+		}
+		
+		while (change > 0.01f) {
+			onePence++;
+			change -= 0.01f;
+		}
 		//This still needs to be completed
 		
 		System.out.println("Twenty : " + twenty);
-		System.out.println("Ten :" + ten);
-		System.out.println("Five :" + five);
+		System.out.println("Ten : " + ten);
+		System.out.println("Five : " + five);
+		System.out.println("Two : " + two);
+		System.out.println("One : " + one);
+		System.out.println("Fifty Pence : " + fiftyPence);
+		System.out.println("Twenty Pence: " + twentyPence);
+		System.out.println("Ten Pence: " + tenPence);
+		System.out.println("Five Pence: " + fivePence);
+		System.out.println("One Pence: " + onePence);
 		
 	}
 	
