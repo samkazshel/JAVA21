@@ -79,6 +79,13 @@ public class Dragon extends Lizard {
 	public void sleep() {
 		System.out.println("Lounges on a pile of gold");
 	}
+
+	@Override
+	public String toString() {
+		return "Dragon [breathType=" + breathType + ", canFly=" + canFly + ", name=" + name + ", wingSpan=" + wingSpan
+				+ "]";
+	}
+	
 	
 	
 	

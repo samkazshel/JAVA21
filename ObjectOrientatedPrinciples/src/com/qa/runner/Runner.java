@@ -2,6 +2,7 @@ package com.qa.runner;
 
 import com.qa.bird.Owl;
 import com.qa.dragon.Dragon;
+import com.qa.dragon.dragonManager;
 import com.qa.myth.MythologicalCreature;
 import com.qa.owlBear.OwlBear;
 import com.qa.troll.troll;
@@ -50,14 +51,18 @@ public class Runner {
 //		System.out.println(Jamie.toString());
 //		System.out.println(Jamie.magicPower());
 		
-		Owl Rich = new Owl(1, "Rich", true);
-		Rich.emergeFromEgg();
-		Rich.cheep();
-		Rich.noise();
-		System.out.println(Rich.fly());
-		Rich.spreadWings();
-		Rich.takeOff();
+//		Owl Rich = new Owl(1, "Rich", true);
+//		Rich.emergeFromEgg();
+//		Rich.cheep();
+//		Rich.noise();
+//		System.out.println(Rich.fly());
+//		Rich.spreadWings();
+//		Rich.takeOff();
 		
+		dragonManager m = new dragonManager();
+		
+		m.addDragon();
+		m.viewDragons();
 		
 	}
 }
